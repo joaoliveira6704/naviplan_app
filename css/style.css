@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    transition: ease all .5s;
 }
 
 
@@ -34,7 +35,8 @@ a {
 }
 
 a:hover {
-    color: grey;
+    color: rgb(201, 201, 201);
+    transition: 0.3s;
 }
 
 .navbar {
@@ -79,4 +81,47 @@ section{
 .title-body{
     text-align: center;
     font-size: 50px;
+    /* This portion sets up the CSS3 transition */
+    transition: font-size .4s linear; 
+    -o-transition: font-size .4s linear; 
+    -moz-transition: font-size .4s linear; 
+    -webkit-transition: font-size .4s linear; 
+  /* Set the property you want to transition. In this case it is font-size */
+}
+
+.active{
+    color: rgb(174, 214, 214);
+}
+
+.active:hover{
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar{
+        background-color: #38405B;
+        display: inline-block; /* Use flexbox layout */
+        justify-content: space-evenly; /* Space items evenly */
+        width: 100%; /* Make the navbar full width */
+        text-align: center;
+    }
+    .navitems{
+        display: inline-block;
+        padding-right: 0px;
+        transform-origin: left;
+        display: none;
+    }
+    .logo{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+    }
+    .title-body{
+        font-size: 30px;
+    }
+    section{
+        padding-left: 100px;
+        padding-right: 100px;
+        transition: ease all 3s;
+    }
 }
