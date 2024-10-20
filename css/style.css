@@ -8,6 +8,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0; /* Remove default body margin */
     overflow-x: hidden; /* Hide horizontal scrollbar if it occurs */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -16,8 +19,12 @@ footer {
     background-color: #38405B;
     padding: 10px 20px; /* Add padding for internal spacing */
     width: 100%; /* Ensure the footer is full width */
-    margin: 0; /* Remove default margin */
-    overflow: hidden;
+    text-align: center;
+    margin-top: auto;
+}
+
+main{
+    padding-bottom: 50px;
 }
 
 a {
@@ -35,18 +42,41 @@ a:hover {
     display: flex; /* Use flexbox layout */
     justify-content: space-between; /* Space items evenly */
     align-items: center; /* Align items vertically */
-    padding: 15px 20px; /* Add padding for internal spacing */
     width: 100%; /* Make the navbar full width */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.logo{
+    padding: 10px 10px;
+    padding-left: 200px;
 }
 
 .navitems {
     display: flex; /* Use flexbox to arrange items in a row */
-    gap: 20px; /* Add space between nav items */
-    padding: 16px;
+    gap: 20px; /* Add space between nav items */    
+    padding-right: 200px;
 }
 
 .home-footer{
-    display: flex; /* Use flexbox layout */
-    justify-content: space-around; /* Space items evenly */
-    padding: 15px 10px; /* Add padding for internal spacing */
+    display: inline-block; /* Use flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    padding: 15px 20px; /* Add padding for internal spacing */
+}
+
+.copyright{
+    font-weight: lighter;
+    font-size: smaller;
+    opacity: 75%;
+}
+
+section{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.title-body{
+    text-align: center;
+    font-size: 50px;
 }
