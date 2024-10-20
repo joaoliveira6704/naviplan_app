@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    background-color: #585977;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; /* Remove default body margin */
+    overflow-x: hidden; /* Hide horizontal scrollbar if it occurs */
+}
+
+
+footer {
+    align-items: center;
+    background-color: #38405B;
+    padding: 10px 20px; /* Add padding for internal spacing */
+    width: 100%; /* Ensure the footer is full width */
+    margin: 0; /* Remove default margin */
+    overflow: hidden;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: grey;
+}
+
+.navbar {
+    background-color: #38405B;
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align items vertically */
+    padding: 15px 20px; /* Add padding for internal spacing */
+    width: 100%; /* Make the navbar full width */
+}
+
+.navitems {
+    display: flex; /* Use flexbox to arrange items in a row */
+    gap: 20px; /* Add space between nav items */
+    padding: 16px;
+}
+
+.home-footer{
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Space items evenly */
+    padding: 15px 10px; /* Add padding for internal spacing */
+}
