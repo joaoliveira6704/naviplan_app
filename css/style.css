@@ -1,127 +1,128 @@
 * {
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 body {
-    background-color: #585977;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0; /* Remove default body margin */
-    overflow-x: hidden; /* Hide horizontal scrollbar if it occurs */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    transition: ease all .5s;
+  background-color: #585977;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; /* Remove default body margin */
+  overflow-x: hidden; /* Hide horizontal scrollbar if it occurs */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: ease all 0.5s;
 }
 
-
-footer {
-    align-items: center;
-    background-color: #38405B;
-    padding: 10px 20px; /* Add padding for internal spacing */
-    width: 100%; /* Ensure the footer is full width */
-    text-align: center;
-    margin-top: auto;
-}
-
-main{
-    padding-bottom: 50px;
+main {
+  padding-bottom: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
 }
 
 a {
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  width: 100%;
+}
+
+footer {
+  align-items: center;
+  background-color: #38405b;
+  padding: 10px 20px; /* Add padding for internal spacing */
+  width: 100%; /* Ensure the footer is full width */
+  text-align: center;
+  margin-top: auto;
 }
 
 a:hover {
-    color: rgb(201, 201, 201);
-    transition: 0.3s;
+  color: rgb(201, 201, 201);
+  transition: 0.3s;
 }
 
 .navbar {
-    background-color: #38405B;
-    display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Space items evenly */
-    align-items: center; /* Align items vertically */
-    width: 100%; /* Make the navbar full width */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-weight: bold;
+  background-color: #38405b;
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Make the navbar full width */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
 }
 
-.logo{
-    padding: 10px 10px;
-    padding-left: 200px;
+.logo {
+  padding: 10px 10px;
+  padding-left: 200px;
 }
 
 .navitems {
-    display: flex; /* Use flexbox to arrange items in a row */
-    gap: 20px; /* Add space between nav items */    
-    padding-right: 200px;
+  display: flex; /* Use flexbox to arrange items in a row */
+  gap: 20px; /* Add space between nav items */
+  padding-right: 200px;
 }
 
-.home-footer{
-    display: inline-block; /* Use flexbox layout */
-    justify-content: space-between; /* Space items evenly */
-    padding: 15px 20px; /* Add padding for internal spacing */
+.home-footer {
+  display: inline-block; /* Use flexbox layout */
+  justify-content: space-between; /* Space items evenly */
+  padding: 15px 20px; /* Add padding for internal spacing */
 }
 
-.copyright{
-    font-weight: lighter;
-    font-size: smaller;
-    opacity: 75%;
+.copyright {
+  font-weight: lighter;
+  font-size: smaller;
+  opacity: 75%;
 }
 
-section{
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.title-body{
-    text-align: center;
-    font-size: 50px;
-    /* This portion sets up the CSS3 transition */
-    transition: font-size .4s linear; 
-    -o-transition: font-size .4s linear; 
-    -moz-transition: font-size .4s linear; 
-    -webkit-transition: font-size .4s linear; 
+.title-body {
+  text-align: center;
+  font-size: 50px;
+  /* This portion sets up the CSS3 transition */
+  transition: font-size 0.4s linear;
+  -o-transition: font-size 0.4s linear;
+  -moz-transition: font-size 0.4s linear;
+  -webkit-transition: font-size 0.4s linear;
   /* Set the property you want to transition. In this case it is font-size */
 }
 
-.active{
-    color: rgb(174, 214, 214);
+.active {
+  color: rgb(174, 214, 214);
 }
 
-.active:hover{
-    color: white;
+.active:hover {
+  color: white;
 }
 
 @media screen and (max-width: 1000px) {
-    .navbar{
-        background-color: #38405B;
-        display: inline-block; /* Use flexbox layout */
-        justify-content: space-evenly; /* Space items evenly */
-        width: 100%; /* Make the navbar full width */
-        text-align: center;
-    }
-    .navitems{
-        display: inline-block;
-        padding-right: 0px;
-        transform-origin: left;
-        display: none;
-    }
-    .logo{
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0px;
-    }
-    .title-body{
-        font-size: 30px;
-    }
-    section{
-        padding-left: 100px;
-        padding-right: 100px;
-        transition: ease all 3s;
-    }
+  .navbar {
+    background-color: #38405b;
+    display: inline-block; /* Use flexbox layout */
+    justify-content: space-evenly; /* Space items evenly */
+    width: 100%; /* Make the navbar full width */
+    text-align: center;
+  }
+  .navitems {
+    display: inline-block;
+    padding-right: 0px;
+    transform-origin: left;
+    display: none;
+  }
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+  }
+  .title-body {
+    font-size: 30px;
+  }
+  main {
+    padding-left: 100px;
+    padding-right: 100px;
+    transition: ease all 3s;
+  }
 }
