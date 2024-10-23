@@ -20,7 +20,7 @@ oAT = int(input("Enter Outside Temperature (ºC): "))  # Outside air temperature
 
 isa = 15 - ((airportElevation_F/1000 * (1.98 * (-1))))
 
-flex = oAT + isa
+flex = oAT + isa + 20
 
 # Calculate air pressure at the elevation
 sea_level_pressure = 1013.25  # Standard sea-level pressure in hPa
