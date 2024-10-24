@@ -4,7 +4,7 @@ import math
 R = 287.05  # J/(kg·K)
 
 # Input for aircraft type
-acType = int(input("Select Aircraft type (A320-232/A320-214/A320-251 (ENTER LAST THREE DIGITS ONLY)): "))
+acType = int(input("Select Aircraft type (A320/B737/A321/A330 (ENTER LAST THREE DIGITS ONLY)): "))
 flapSetting = int(input("Enter Flap Setting (1-2-3-4): "))
 
 # Input for airport elevation
@@ -53,12 +53,12 @@ match flapSetting:
 
 # Wing area for different aircraft types
 match acType:
-    case 232:
+    case 320 | 321:
         wingarea = 35.80  # Correct wing area in m²
-    case 214:
-        wingarea = 35.80  # Correct wing area in m²
-    case 251:
-        wingarea = 35.80  # Correct wing area in m²
+    case 737:
+        wingarea = 34.31  # Correct wing area in m²
+    case 330:
+        wingarea = 60.30  # Correct wing area in m²
     case _:
         print("Invalid type or not supported yet!")
         exit(1)
