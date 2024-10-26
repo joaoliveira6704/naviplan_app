@@ -45,6 +45,15 @@ a:hover {
   transition: 0.3s;
 }
 
+form{
+  text-align: left;
+}
+
+.infoInput{
+  text-align: center;
+  padding-left: 300px;
+}
+
 .navbar {
   background-color: #38405b;
   display: flex; /* Use flexbox layout */
@@ -98,6 +107,12 @@ a:hover {
   color: white;
 }
 
+@media screen and (max-width: 1600px){
+  .infoInput{
+    padding-left: 200px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .navbar {
     background-color: #38405b;
@@ -124,5 +139,8 @@ a:hover {
     padding-left: 100px;
     padding-right: 100px;
     transition: ease all 3s;
+  }
+  .infoInput{
+    padding-left: 200px;
   }
 }

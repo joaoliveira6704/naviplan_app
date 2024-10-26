@@ -22,48 +22,53 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="webapp">
         <section>
             <h1 class="title-body">WELCOME TO NAVIPLAN</h1>
-            <p>NaviPlan is an innovative and user-friendly app designed to simplify flight planning for pilots and aviation professionals. Whether you're preparing for a commercial flight or a personal adventure, NaviPlan provides you with the tools you need to ensure a safe and efficient journey.</p>
         </section>
 
-        <section>
-            <h2>Key Features</h2>
-            <ul>
-                <li><strong>Accurate Performance Calculations:</strong> Calculate essential performance metrics, including fuel consumption, range, climb rates, and takeoff/landing distances for various aircraft types.</li>
-                <li><strong>Document Indexing:</strong> Easily organize and access important flight documents such as operational manuals, checklists, and charts all in one place.</li>
-                <li><strong>Customizable Settings:</strong> Tailor calculations to your specific aircraft and flight conditions to ensure the most accurate results.</li>
-                <li><strong>User-Friendly Interface:</strong> Navigate the app effortlessly with an intuitive design that caters to both professionals and aviation enthusiasts.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Why Choose NaviPlan?</h2>
-            <p>NaviPlan is completely free and open-source, making it accessible to everyone in the aviation community. With our commitment to accuracy and ease of use, we empower pilots to make informed decisions and enhance their flight planning experience.</p>
-        </section>
-
-        <section>
-            <h2>Get Started Today!</h2>
-            <p>Ready to take your flight planning to the next level? Download NaviPlan now and discover the power of precise aircraft performance calculations at your fingertips!</p>
-            <a href="/pages/download.html" class="button">-&gt; Download Now</a>
-            <br>
-            <a href="https://github.com/joaoliveira6704/naviplan_app">-&gt; View on GitHub</a>
-        </section>
-
-        <section>
-            <h2>Join Our Community</h2>
-            <p>Stay connected with fellow aviation enthusiasts! Join our community on social media and share your experiences, tips, and feedback about NaviPlan.</p>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Discord</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Support</h2>
-            <p>If you have questions or need assistance, feel free to reach out to our support team. We’re here to help you make the most of your NaviPlan experience.</p>
-        </section>
+        <div class="infoInput">
+            <form action="#" method="post">
+                <label for="acType">Select Aircraft:</label>
+                <select name="acType" id="acType">
+                    <option value="a320">A320</option>
+                    <option value="a321">A321</option>
+                    <option value="a330">A330</option>
+                    <option value="b737">B737</option>
+                </select>
+                <br>
+                <label for="flaps">Flap Settings:</label>
+                <select name="flaps" id="flaps">
+                    <option value="1">1+F</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">Full</option>
+                </select>
+                <br>
+                <label for="apElev">Airport Elevation: </label>
+                <input type="text" id="apElev">
+                <br>
+                <label for="apElev">Outside Air Temp(ºC): </label>
+                <input type="text" id="oAT">
+                <br>
+                <label for="qnh">QNH (hPa): </label>
+                <input type="text" id="qnh">
+                <br>
+                <label for="windSpeed">Windspeed (knots): </label>
+                <input type="text" id="windSpeed">
+                <br>
+                <label for="windDirection">Wind Direction: </label>
+                <select name="windDirection" id="windDirection">
+                    <option value="headwind">Headwind</option>
+                    <option value="tailwind">Tailwind</option>
+                </select>
+                <br>
+                <label for="gW">Gross Weight (KG):</label>
+                <input type="text" id="gW">
+                <br>
+                <button type="submit" href="#">Calculate</button>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="home-footer">

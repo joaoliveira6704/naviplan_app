@@ -23,7 +23,7 @@ isa = 15 - ((airportElevation_F/1000 * (1.98 * (-1))))
 flex = oAT + isa + 20
 
 # Calculate air pressure at the elevation
-sea_level_pressure = 1013.25  # Standard sea-level pressure in hPa
+sea_level_pressure = int(input("QNH (hPa): ")) # Standard sea-level pressure in hPa
 # Approximate pressure drop with elevation (in hPa)
 airPressure = sea_level_pressure * math.exp(-airportElevation / 8400)
 
@@ -105,4 +105,4 @@ print(f"Performance Calculations for A320-{acType}:\n")
 print(f"V1: {int(v1)} knots")
 print(f"VR: {int(vR_min)} - {int(vR_max)} knots")
 print(f"V2: {int(v2_min)} - {int(v2_max)} knots")
-print(f"FLEX: {int(flex)}ºC")
+print(f"FLEX: {int(flex)}ºC") 
